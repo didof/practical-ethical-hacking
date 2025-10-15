@@ -1,0 +1,31 @@
+{
+  "name": "demo-length-extension-attack-with-prevention",
+  "version": "1.0.0",
+  "description": "A project demonstrating a length extension attack against a vulnerable SHA-256 implementation and shows why HMAC should be used instead.",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server/app.js",
+    "attack": "node attacker/run_attack.js"
+  },
+  "type": "module",
+  "keywords": [
+    "security",
+    "vulnerability",
+    "cryptography",
+    "length-extension-attack",
+    "sha256",
+    "hmac",
+    "node.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.0",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}
