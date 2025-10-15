@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Takeover Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div id="app" class="min-h-screen flex items-center justify-center">
+      <div
+        class="bg-gray-800 p-8 rounded-lg shadow-2xl w-full max-w-lg border border-gray-700"
+      >
+        <h1 class="text-2xl font-bold mb-2 text-center text-red-500">
+          Host Header Injection Demo
+        </h1>
+        <p class="text-center text-gray-400 mb-6">
+          Demonstrating a Full Account Takeover
+        </p>
+
+        <form id="reset-form">
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-gray-300 text-sm font-bold mb-2"
+              >Victim's Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              value="user@victim.com"
+              class="bg-gray-700 shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors"
+          >
+            Initiate Password Reset
+          </button>
+        </form>
+
+        <div
+          id="response"
+          class="mt-6 p-4 bg-gray-900 rounded border border-gray-700 text-gray-300 min-h-[100px]"
+        >
+          <p>Click the button to start the simulation.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

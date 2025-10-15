@@ -1,0 +1,26 @@
+{
+  "name": "host-header-injection-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for Demo Host Header Injection",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "vulnerable": "node ./vulnerable-server.js",
+    "attacker": "node ./attacker-server.js",
+    "start": "pnpm run vulnerable & pnpm run attacker"
+  },
+  "keywords": [
+    "demo",
+    "vulnerability",
+    "hacking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.0",
+  "dependencies": {
+    "backend": "^0.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
