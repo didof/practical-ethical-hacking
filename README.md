@@ -14,6 +14,8 @@ This collection is actively growing. Here are the currently available demonstrat
 | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ | :--------- |
 | `host-header-injection`                                    | A full account takeover scenario demonstrating how trusting the `Host` header can be exploited.           | ✅ Runnable |
 | `length-extension-attack-with-prevention`                  | A cryptographic attack showing how a naive MAC signature using `SHA256(key + data)` can be forged.        | ✅ Runnable |
+| `ssrf-misplaced-trust`                  | Demonstrates how a server can be tricked into attacking its own internal network via a simple feature.        | ✅ Runnable |
+
 
 ## 🛠️ Getting Started
 

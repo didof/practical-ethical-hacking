@@ -14,6 +14,7 @@ Questa raccolta è in continua crescita. Ecco le dimostrazioni attualmente dispo
 | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :--------- |
 | `host-header-injection`                                    | Uno scenario di account takeover completo che dimostra come sfruttare la fiducia nell'header `Host`.              | ✅ Eseguibile |
 | `length-extension-attack-with-prevention`                  | Un attacco crittografico che mostra come una firma MAC ingenua, basata su `SHA256(chiave + dati)`, può essere falsificata. | ✅ Eseguibile |
+| `ssrf-misplaced-trust`                  | Dimostra come un server possa essere indotto con l'inganno ad attaccare la propria rete interna tramite una semplice funzionalità.        | ✅ Eseguibile |
 
 ## 🛠️ Come Iniziare
 

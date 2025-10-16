@@ -1,0 +1,13 @@
+{
+  "name": "internal-api",
+  "version": "1.0.0",
+  "description": "A simulated internal API server to act as a target for an SSRF demo.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
