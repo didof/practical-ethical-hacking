@@ -5,7 +5,7 @@ import cors from 'cors';
 
 // --- Helper Functions ---
 const logger = {
-    blue: (msg) => console.log(`\x1b[34m[VULNERABLE SERVER]\x1b[0m ${msg}`),
+    info: (msg) => console.log(`\x1b[34m[VULNERABLE SERVER]\x1b[0m ${msg}`),
     warn: (msg) => console.log(`\x1b[33m[VULNERABLE SERVER]\x1b[0m ${msg}`),
     error: (msg) => console.error(`\x1b[31m[ERROR]\x1b[0m ${msg}`)
 };
@@ -88,7 +88,7 @@ vulnerableApp.post('/reset-password', (req, res) => {
 
 // --- Server Startup ---
 vulnerableApp.listen(VULNERABLE_PORT, () => {
-    logger.blue(`Listening on http://localhost:${VULNERABLE_PORT}`);
+    logger.info(`Listening on http://localhost:${VULNERABLE_PORT}`);
 }).on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
         logger.error(`Port ${VULNERABLE_PORT} is already in use.`);

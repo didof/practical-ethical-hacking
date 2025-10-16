@@ -1,5 +1,9 @@
 # Host Header Injection: Demo di un Account Takeover Completo
 
+> **Attenzione:**
+>
+> [DISCLAIMER] Questo progetto ha esclusivamente scopo didattico e mira a dimostrare una vulnerabilità crittografica. Non è destinato ad alcun uso malevolo. L'autore non è responsabile per eventuali usi impropri delle informazioni o del codice forniti.
+
 [🇬🇧](/host-header-injection/README.md)
 
 Benvenuto/a\! Questo demo interattivo ti guiderà attraverso un attacco completo, end-to-end, di tipo **Host Header Injection**. Giocherai sia il ruolo dell'utente che quello dell'attaccante per capire come una singola vulnerabilità, apparentemente piccola, possa portare a un takeover totale dell'account.
